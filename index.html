@@ -11,26 +11,29 @@
 	<Link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" intégrité="SHA384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonyme">
 </head>
 
-<body class="container">
-
-	<header class="header"><!-- HEADER ------------------------------------------- -->
+<body>
+	<!-- HEADER ------------------------------------------------------------------ -->
+	<header class="header">
 		<figure>
 			<img src="img/logo/ohmyfood.svg" alt="logo ohmyfood">
 		</figure>
 	</header>
 
-	<main>
-		<section class="map"><!-- MAP -------------------------------------------- -->
+	<!-- HOME -------------------------------------------------------------------- -->
+	<main class="home">
+		<!-- MAP ----------------------------------------------------------------- -->
+		<section class="home__map">
 			<a href="https://goo.gl/maps/d5T6E5NaaYKdKXon8" target="_blank">
 				<i class="fas fa-map-marker-alt"></i> 
 				<p>
-					Paris,Belleville
+					Paris, Belleville
 				</p>
 			</a>
 		</section>
 
-		<section class="reservez"><!-- RESERVEZ ---------------------------------- -->
-			<h1>Réserver le menu qui vous convient</h1>
+		<!-- RESERVEZ ------------------------------------------------------------ -->
+		<section class="home__reservez">
+			<h1>Réservez le menu qui<br />vous convient</h1>
 			<h2>Découvrez des restaurants d'exeption,<br />
 			sélectionnés par nos soins</h2>
 			<form action="">
@@ -40,30 +43,32 @@
 			</form>
 		</section>
 
-		<section class="fonctionnement"><!-- FONCTIONNEMENT ----------------------- -->
+		<!-- FONCTIONNEMENT ----------------------------------------------------- -->
+		<section class="home__fonctionnement">
 			<h3>Fonctionnement</h3>
-			<a class="fonctionnement__choix" href="">
+			<a href="">
 				<p class="number">1</p>
 				<i class="fas fa-mobile-alt"></i>
 				<p>Choisissez un restaurant</p>
 			</a>
 
-			<a class="fonctionnement__compo" href="">
+			<a href="">
 				<p class="number">2</p>
 				<i class="fas fa-list-ul"></i>
 				<p>Composez votre menu</p>
 			</a>
 
-			<a class="fonctionnement__degust" href="">
+			<a href="">
 				<p class="number">3</p>
 				<i class="fas fa-store"></i>
 				<p>Dégustez au restaurant</p>
 			</a>
 		</section>
 
-		<section class="restaurant"><!-- RESTAURANT -------------------------------- -->
+		<!-- RESTAURANT ---------------------------------------------------------- -->
+		<section class="home__restaurant">
 			<h3>Restaurants</h3>
-			<a class="restaurant__palette" href="palette_gout.html">		
+			<a href="palette_gout.html">		
 				<figure>
 					<img src="img/restaurant/palette_gout.jpg" alt="La palette du goût">
 				</figure>
@@ -81,7 +86,7 @@
 				</div>
 			</a>
 
-			<a class="restaurant__note" href="note_enchantee.html">		
+			<a href="note_enchantee.html">		
 				<figure>
 					<img src="img/restaurant/note_enchantee.jpg" alt="La note enchantée">
 				</figure>
@@ -98,7 +103,7 @@
 				</div>
 			</a>
 
-			<a class="restaurant__francaise" href="la_francaise.html">		
+			<a href="la_francaise.html">		
 				<figure>
 					<img src="img/restaurant/la_francaise.jpg" alt="À la française">
 				</figure>
@@ -114,7 +119,7 @@
 				</div>
 			</a>
 
-			<a class="restaurant__delice" href="delice_sens.html">		
+			<a href="delice_sens.html">		
 				<figure>
 					<img src="img/restaurant/delice_sens.jpg" alt="Le délice des sens">
 				</figure>
@@ -132,18 +137,18 @@
 		</section>
 	</main>
 
-
-	<footer class="footer"> <!-- FOOTER ------------------------------------------- -->
+	<!-- FOOTER ------------------------------------------------------------------ -->
+	<footer class="footer">
 		<h4>ohmyfood</h4>
 
-		<div class="proposez">
+		<div class="footer__lien">
 			<i class="fas fa-utensils"></i>
 			<p>
 				Proposant un restaurant
 			</p>
 		</div>
 
-		<div class="partenaire">
+		<div class="footer__lien">
 			<i class="fas fa-hands-helping"></i>
 			<p>
 				Devenir partenaire
@@ -155,7 +160,7 @@
 		</p>
 
 		<p>
-			Contact
+			<a href="mailto:contact@ohmyfood.com">Contact</a>
 		</p>
 	</footer>
 </body>

@@ -1,6 +1,122 @@
+/* UTILS ******************************************************************************* */
+/* BASE ******************************************************************************** */
 body {
   margin: 0px;
   padding: 0px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body a {
+  text-decoration: none;
+  color: #000000;
+}
+body figure {
+  margin: 0px;
+}
+body figure img {
+  width: 100%;
+}
+body form {
+  text-align: center;
+}
+
+/* HEADER *************************************************************************** */
+.header figure {
+  text-align: center;
+  margin: 20px 40px 10px;
+}
+.header figure img {
+  margin: auto;
+  width: 60%;
+}
+
+/* HOME ******************************************************************************/
+.home {
+  display: flex;
+  flex-direction: column;
+}
+.home__map a {
+  display: flex;
+  justify-content: center;
+  background: #eaeaea;
+}
+.home__map a i {
+  margin: 16px 16px 16px 0px;
+}
+.home__reservez {
+  background: #f7f7f7;
+  padding: 20px 0px 60px;
+}
+.home__fonctionnement {
+  padding-bottom: 40px;
+}
+.home__fonctionnement a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7f7f7;
+  width: 90%;
+  margin: 15px auto;
+}
+.home__fonctionnement i {
+  margin: 16px;
+  width: 10%;
+}
+.home__restaurant {
+  background: #f7f7f7;
+}
+.home__restaurant a {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 0px 20px;
+}
+.home__restaurant h4 {
+  margin: 16px;
+}
+.home h1 {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 20px 0px 10px;
+}
+.home h2 {
+  font-size: 1.1em;
+  font-weight: 300;
+  text-align: center;
+  margin: 0px 0px 30px;
+}
+.home h3 {
+  margin: 40px 15px 20px;
+  font-size: 1.5em;
+}
+
+/* MENU ***************************************************************************** */
+/* FOOTER ************************************************************************** */
+.footer {
+  background: #383838;
+  padding: 0px 20px 40px;
+}
+.footer__lien {
+  display: flex;
+}
+.footer h4 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin: 16px 0px;
+}
+.footer p, .footer a {
+  color: #FFFFFF;
+  margin: 0px 10px 10px 0px;
+}
+.footer i {
+  color: #FFFFFF;
+  width: 8%;
+  height: 3%;
 }
 
 /*# sourceMappingURL=styles.css.map */
