@@ -79,11 +79,12 @@ body {
 	}
 	&__restaurant {
 		background: lighten($grey, 5%);
+		padding-bottom: 50px;
 		a {
 			display: flex;
 			flex-direction: column;
 			align-content: center;
-			margin: 0px 20px;
+			margin: 20px;
 		}
 		h4 {
 			margin: 16px;
@@ -103,6 +104,30 @@ body {
 	h3 {
 		margin: 40px 15px 20px;
 		font-size: 1.5em;
+	}
+}
+
+.image {
+	display: flex;
+	position: relative;
+  	text-align: center;
+}
+.new {
+	position: absolute;
+	top: 8px;
+	right: 16px;
+	background: $tertiaire;
+	color: darken($tertiaire, 40%);
+	width: 25%;
+	font-weight: 700;
+}
+
+.info {
+	display: flex;
+	background: #FFFFFF;
+	h4 {
+		margin: 16px 10px;
+		width: 80%;
 	}
 }
 

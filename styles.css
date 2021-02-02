@@ -67,12 +67,13 @@ body form {
 }
 .home__restaurant {
   background: #f7f7f7;
+  padding-bottom: 50px;
 }
 .home__restaurant a {
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin: 0px 20px;
+  margin: 20px;
 }
 .home__restaurant h4 {
   margin: 16px;
@@ -91,6 +92,31 @@ body form {
 .home h3 {
   margin: 40px 15px 20px;
   font-size: 1.5em;
+}
+
+.image {
+  display: flex;
+  position: relative;
+  text-align: center;
+}
+
+.new {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  background: #99E2D0;
+  color: #278870;
+  width: 25%;
+  font-weight: 700;
+}
+
+.info {
+  display: flex;
+  background: #FFFFFF;
+}
+.info h4 {
+  margin: 16px 10px;
+  width: 80%;
 }
 
 /* MENU ***************************************************************************** */
