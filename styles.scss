@@ -18,6 +18,26 @@ $grey: #eaeaea;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	&__header {
+		display: flex;
+		box-shadow: 0px 10px 14px -7px darken($grey, 60%);
+		position: relative;
+		figure {
+		text-align: center;
+		padding: 20px 40px 10px;
+		margin: 0px;
+		width: 100%;
+		}
+		img {
+			margin: auto;
+			width: 60%;
+		}
+		i {
+			margin-left: 16px;
+			position: absolute;
+			left: 10px;
+		}
+	}
 	&__home {
 		display: flex;
 		flex-direction: column;
@@ -27,7 +47,8 @@ $grey: #eaeaea;
 		}
 	}
 	&__menu {
-
+		display: flex;
+		flex-direction: column;
 	}
 	&__footer {
 	background: darken($grey, 70%);
@@ -67,6 +88,7 @@ form {
 	cursor: pointer;
 	color: #ffffff;
 	font-size: 1em;
+	font-weight: 600;
 	padding: 15px 5px;
 	text-decoration: none;
 	width: 58%;
@@ -86,19 +108,6 @@ form {
 	}
 }
 
-/* HEADER *************************************************************************** */
-
-.header figure {
-	text-align: center;
-	padding: 20px 40px 10px;
-	box-shadow: 6px 6px 0px darken($grey, 60%);
-	margin: 0px;
-		img {
-			margin: auto;
-			width: 60%;
-		}
-}
-
 /* HOME ******************************************************************************/
 
 .map {
@@ -108,6 +117,7 @@ form {
 		background: $grey;
 		text-decoration: none;
 		color: #000000;
+		font-weight: 500;
 		i {
 			margin: 16px 16px 16px 0px;
 		}
@@ -132,8 +142,8 @@ form {
 }
 
 .fonctionnement {
-	padding-bottom: 40px;
-	a {
+	padding-bottom: 40px 0px;
+	&__button {
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
@@ -143,28 +153,31 @@ form {
 		box-shadow: 0px 10px 14px -7px darken($grey, 20%);
 		border-radius: 20px;
 		padding: 10px 0px;
+		position: relative;
 		text-decoration: none;
 		color: #000000;
-	}
-	i {
-		margin: 16px;
-		font-size: 1em;
-		color: darken($grey, 50%);
-	}
-	p{
-		font-weight: 600;
-		margin-left: 10px;
-		font-size: 1em;
-	}
-	&__.number {
+		&--number {
 		width: 20px;
 		height: 20px;
 		border-radius: 20px;
 		background: $primaire;
 		text-align: center;
 		color: #FFFFFF;
-		font-size: 1em; 
-		font-weight: 300;
+		font-size: 0.8em; 
+		font-weight: 400;
+		position: absolute;
+		left: -8px;
+		}
+		&--choix {
+			font-weight: 600;
+			margin-left: 10px;
+			font-size: 1em;
+		}
+		i {
+			margin: 0px 16px 0px 35px;
+			font-size: 1.2em;
+			color: darken($grey, 40%);
+		}
 	}
 }
 
@@ -173,43 +186,52 @@ form {
 	padding-bottom: 50px;
 	a {
 		display: flex;
+		position: relative;
 		flex-direction: column;
 		align-content: center;
 		margin: 20px;
 		border-radius: 10px;
 		text-decoration: none;
 		color: #000000;
+		box-shadow: 0px 10px 14px -7px darken($grey, 20%);
 	}
 	h4 {
 		margin: 16px;
 		margin: 16px 10px;
 		width: 80%;
 	}
+	span {
+		font-weight: 300;
+	}
 	&__image {
-		display: flex;
-		position: relative;
 	  	text-align: center;
 	  	margin: 0px;
+	  	height: 200px;
 	  	img {
+			height: 200px;
 	  		width: 100%;
+	  		background-size: cover;
+	  		border-top-left-radius: 15px;
+	  		border-top-right-radius: 15px;
 	  	}
 	}
 	&__info {
 		display: flex;
 		background: #FFFFFF;
+		border-bottom-left-radius: 15px;
+	  	border-bottom-right-radius: 15px;
 	}
 	&__new {
 		position: absolute;
-		top: 8px;
+		border-radius: 3px;
+		top: 16px;
 		right: 16px;
 		background: $tertiaire;
 		color: darken($tertiaire, 40%);
-		width: 25%;
+		width: 20%;
 		font-weight: 700;
+		padding: 8px 10px;
 	}
 }
 
 /* MENU ***************************************************************************** */
-
-
-

@@ -9,6 +9,26 @@
   flex-direction: column;
   justify-content: center;
 }
+.container__header {
+  display: flex;
+  box-shadow: 0px 10px 14px -7px #515151;
+  position: relative;
+}
+.container__header figure {
+  text-align: center;
+  padding: 20px 40px 10px;
+  margin: 0px;
+  width: 100%;
+}
+.container__header img {
+  margin: auto;
+  width: 60%;
+}
+.container__header i {
+  margin-left: 16px;
+  position: absolute;
+  left: 10px;
+}
 .container__home {
   display: flex;
   flex-direction: column;
@@ -16,6 +36,10 @@
 .container__home h3 {
   margin: 40px 15px 20px;
   font-size: 1.5em;
+}
+.container__menu {
+  display: flex;
+  flex-direction: column;
 }
 .container__footer {
   background: #383838;
@@ -54,6 +78,7 @@ form {
   cursor: pointer;
   color: #ffffff;
   font-size: 1em;
+  font-weight: 600;
   padding: 15px 5px;
   text-decoration: none;
   width: 58%;
@@ -67,18 +92,6 @@ form {
   top: 1px;
 }
 
-/* HEADER *************************************************************************** */
-.header figure {
-  text-align: center;
-  padding: 20px 40px 10px;
-  box-shadow: 6px 6px 0px #515151;
-  margin: 0px;
-}
-.header figure img {
-  margin: auto;
-  width: 60%;
-}
-
 /* HOME ******************************************************************************/
 .map a {
   display: flex;
@@ -86,6 +99,7 @@ form {
   background: #eaeaea;
   text-decoration: none;
   color: #000000;
+  font-weight: 500;
 }
 .map a i {
   margin: 16px 16px 16px 0px;
@@ -109,9 +123,9 @@ form {
 }
 
 .fonctionnement {
-  padding-bottom: 40px;
+  padding-bottom: 40px 0px;
 }
-.fonctionnement a {
+.fonctionnement__button {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -121,28 +135,31 @@ form {
   box-shadow: 0px 10px 14px -7px #b7b7b7;
   border-radius: 20px;
   padding: 10px 0px;
+  position: relative;
   text-decoration: none;
   color: #000000;
 }
-.fonctionnement i {
-  margin: 16px;
-  font-size: 1em;
-  color: #6b6b6b;
-}
-.fonctionnement p {
-  font-weight: 600;
-  margin-left: 10px;
-  font-size: 1em;
-}
-.fonctionnement__.number {
+.fonctionnement__button--number {
   width: 20px;
   height: 20px;
   border-radius: 20px;
   background: #9356DC;
   text-align: center;
   color: #FFFFFF;
+  font-size: 0.8em;
+  font-weight: 400;
+  position: absolute;
+  left: -8px;
+}
+.fonctionnement__button--choix {
+  font-weight: 600;
+  margin-left: 10px;
   font-size: 1em;
-  font-weight: 300;
+}
+.fonctionnement__button i {
+  margin: 0px 16px 0px 35px;
+  font-size: 1.2em;
+  color: #848484;
 }
 
 .restaurant {
@@ -151,39 +168,51 @@ form {
 }
 .restaurant a {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-content: center;
   margin: 20px;
   border-radius: 10px;
   text-decoration: none;
   color: #000000;
+  box-shadow: 0px 10px 14px -7px #b7b7b7;
 }
 .restaurant h4 {
   margin: 16px;
   margin: 16px 10px;
   width: 80%;
 }
+.restaurant span {
+  font-weight: 300;
+}
 .restaurant__image {
-  display: flex;
-  position: relative;
   text-align: center;
   margin: 0px;
+  height: 200px;
 }
 .restaurant__image img {
+  height: 200px;
   width: 100%;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .restaurant__info {
   display: flex;
   background: #FFFFFF;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 .restaurant__new {
   position: absolute;
-  top: 8px;
+  border-radius: 3px;
+  top: 16px;
   right: 16px;
   background: #99E2D0;
   color: #278870;
-  width: 25%;
+  width: 20%;
   font-weight: 700;
+  padding: 8px 10px;
 }
 
 /* MENU ***************************************************************************** */
