@@ -11,25 +11,78 @@ $grey: #eaeaea;
 
 /* BASE ******************************************************************************** */
 
-body {
+.container {
 	margin: 0px;
 	padding: 0px;
 	@include roboto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	a {
-		text-decoration: none;
-		color: #000000;
-	}
-	figure {
-		margin: 0px;
-		img {
-		width: 100%;
+	&__home {
+		display: flex;
+		flex-direction: column;
+		h3 {
+		margin: 40px 15px 20px;
+		font-size: 1.5em;
 		}
 	}
-	form {
+	&__menu {
+
+	}
+	&__footer {
+	background: darken($grey, 70%);
+	padding: 0px 20px 40px;
+		.lien {
+		display: flex;
+		}
+		h4 {
+			font-family: 'Shrikhand', sans-serif;
+			font-size: 1.1em;
+			font-weight: 500;
+			color: #FFFFFF;
+			margin: 16px 0px;
+		} 
+		p, a {
+			color: #FFFFFF;
+			margin: 0px 10px 10px 0px;
+		}
+		i {
+			color: #FFFFFF;
+			width: 8%;
+			height: 3%;
+		}
+	}
+}
+
+form {
 		text-align: center;
+	}
+
+.btn {
+	box-shadow: 0px 10px 14px -7px darken($grey, 30%);
+	background: linear-gradient(to bottom, $secondaire, $primaire);
+	border-radius: 42px;
+	border: none;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 1em;
+	padding: 15px 5px;
+	text-decoration: none;
+	width: 58%;
+	&:hover {
+		background:linear-gradient(to bottom, $secondaire, $primaire);
+		background-color: $secondaire;
+	}
+	&:active {
+		position: relative;
+		top: 1px;
+	}
+}
+
+.anime {
+	&__heart {
+
 	}
 }
 
@@ -37,59 +90,33 @@ body {
 
 .header figure {
 	text-align: center;
-	margin: 20px 40px 10px;
-	img {
-		margin: auto;
-		width: 60%;
-	}
+	padding: 20px 40px 10px;
+	box-shadow: 6px 6px 0px darken($grey, 60%);
+	margin: 0px;
+		img {
+			margin: auto;
+			width: 60%;
+		}
 }
 
 /* HOME ******************************************************************************/
 
-.home {
-	display: flex;
-	flex-direction: column;
-	// align-items: center;
-	&__map a {
+.map {
+	a {
 		display: flex;
 		justify-content: center;
 		background: $grey;
+		text-decoration: none;
+		color: #000000;
 		i {
 			margin: 16px 16px 16px 0px;
 		}
 	}
-	&__reservez {
-		background: lighten($grey, 5%);
-		padding: 20px 0px 60px;
-	}
-	&__fonctionnement {
-		padding-bottom: 40px;
-		a {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background: lighten($grey, 5%);
-		width: 90%;
-		margin: 15px auto;
-		}
-		i {
-			margin: 16px;
-			width: 10%;
-		}
-	}
-	&__restaurant {
-		background: lighten($grey, 5%);
-		padding-bottom: 50px;
-		a {
-			display: flex;
-			flex-direction: column;
-			align-content: center;
-			margin: 20px;
-		}
-		h4 {
-			margin: 16px;
-		}
-	}
+}
+
+.reservez {
+	background: lighten($grey, 5%);
+	padding: 20px 0px 60px;
 	h1 {
 		font-size: 1.5em;
 		text-align: center;
@@ -100,34 +127,85 @@ body {
 		font-weight: 300;
 		text-align: center;
 		margin: 0px 0px 30px;
-	}
-	h3 {
-		margin: 40px 15px 20px;
-		font-size: 1.5em;
+		color: darken($grey, 50%);
 	}
 }
 
-.image {
-	display: flex;
-	position: relative;
-  	text-align: center;
-}
-.new {
-	position: absolute;
-	top: 8px;
-	right: 16px;
-	background: $tertiaire;
-	color: darken($tertiaire, 40%);
-	width: 25%;
-	font-weight: 700;
+.fonctionnement {
+	padding-bottom: 40px;
+	a {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		background: lighten($grey, 5%);
+		width: 85%;
+		margin: 15px auto;
+		box-shadow: 0px 10px 14px -7px darken($grey, 20%);
+		border-radius: 20px;
+		padding: 10px 0px;
+		text-decoration: none;
+		color: #000000;
+	}
+	i {
+		margin: 16px;
+		font-size: 1em;
+		color: darken($grey, 50%);
+	}
+	p{
+		font-weight: 600;
+		margin-left: 10px;
+		font-size: 1em;
+	}
+	&__.number {
+		width: 20px;
+		height: 20px;
+		border-radius: 20px;
+		background: $primaire;
+		text-align: center;
+		color: #FFFFFF;
+		font-size: 1em; 
+		font-weight: 300;
+	}
 }
 
-.info {
-	display: flex;
-	background: #FFFFFF;
+.restaurant {
+	background: lighten($grey, 5%);
+	padding-bottom: 50px;
+	a {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		margin: 20px;
+		border-radius: 10px;
+		text-decoration: none;
+		color: #000000;
+	}
 	h4 {
+		margin: 16px;
 		margin: 16px 10px;
 		width: 80%;
+	}
+	&__image {
+		display: flex;
+		position: relative;
+	  	text-align: center;
+	  	margin: 0px;
+	  	img {
+	  		width: 100%;
+	  	}
+	}
+	&__info {
+		display: flex;
+		background: #FFFFFF;
+	}
+	&__new {
+		position: absolute;
+		top: 8px;
+		right: 16px;
+		background: $tertiaire;
+		color: darken($tertiaire, 40%);
+		width: 25%;
+		font-weight: 700;
 	}
 }
 
@@ -135,28 +213,3 @@ body {
 
 
 
-/* FOOTER ************************************************************************** */
-
-.footer {
-	background: darken($grey, 70%);
-	padding: 0px 20px 40px;
-	&__lien {
-		display: flex;
-	}
-	h4 {
-		font-family: 'Shrikhand', sans-serif;
-		font-size: 1.1em;
-		font-weight: 500;
-		color: #FFFFFF;
-		margin: 16px 0px;
-	} 
-	p, a {
-		color: #FFFFFF;
-		margin: 0px 10px 10px 0px;
-	}
-	i {
-		color: #FFFFFF;
-		width: 8%;
-		height: 3%;
-	}
-}
