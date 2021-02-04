@@ -11,8 +11,9 @@
 }
 .container__header {
   display: flex;
-  box-shadow: 0px 10px 14px -7px #515151;
-  position: relative;
+  box-shadow: 0px 10px 14px -7px #d1d1d1;
+  justify-content: space-between;
+  align-items: center;
 }
 .container__header figure {
   text-align: center;
@@ -25,9 +26,7 @@
   width: 60%;
 }
 .container__header i {
-  margin-left: 16px;
-  position: absolute;
-  left: 10px;
+  margin-left: 20px;
 }
 .container__home {
   display: flex;
@@ -40,6 +39,33 @@
 .container__menu {
   display: flex;
   flex-direction: column;
+  background-color: #eaeaea;
+}
+.container__menu figure, .container__menu img {
+  width: 100%;
+  height: 300px;
+  margin: 0px;
+}
+.container__menu h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.8em;
+  font-weight: 300;
+  margin: 25px 16px 10px 16px;
+}
+.container__menu h2 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+.container__menu hr {
+  color: #99E2D0;
+  border: 1px solid #99E2D0;
+  width: 2.3em;
+  margin-left: 0px;
+}
+.container__menu form {
+  margin: 30px 0px 60px 0px;
 }
 .container__footer {
   background: #383838;
@@ -58,6 +84,7 @@
 .container__footer p, .container__footer a {
   color: #FFFFFF;
   margin: 0px 10px 10px 0px;
+  text-decoration: none;
 }
 .container__footer i {
   color: #FFFFFF;
@@ -82,16 +109,8 @@ form {
   padding: 15px 5px;
   text-decoration: none;
   width: 58%;
+  transition: transform 400ms;
 }
-.btn:hover {
-  background: linear-gradient(to bottom, #FF79DA, #9356DC);
-  background-color: #FF79DA;
-}
-.btn:active {
-  position: relative;
-  top: 1px;
-}
-
 /* HOME ******************************************************************************/
 .map a {
   display: flex;
@@ -216,5 +235,55 @@ form {
 }
 
 /* MENU ***************************************************************************** */
+.menu-photo img {
+  position: relative;
+  background-size: cover;
+}
+
+.menu-titre {
+  display: flex;
+  position: absolute;
+  bottom: 280px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 100%;
+  background-color: #eaeaea;
+  margin-bottom: 16px;
+}
+
+.menu-plat {
+  padding: 16px 16px 0px 16px;
+}
+.menu-plat__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f7f7;
+  margin: 15px auto;
+  padding: 0px 10px;
+  box-shadow: 0px 10px 14px -7px #b7b7b7;
+  border-radius: 20px;
+  position: relative;
+  text-decoration: none;
+  color: #000000;
+  height: 70px;
+}
+.menu-plat .description {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu-plat .description span {
+  font-size: 0.9em;
+  font-weight: 300;
+}
+.menu-plat .price {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
 
 /*# sourceMappingURL=styles.css.map */
