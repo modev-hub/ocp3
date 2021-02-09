@@ -17,7 +17,7 @@ $grey: #eaeaea;
 	@include roboto;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	align-content: center;
 }
 
 /* MAIN ******************************************************************************** */
@@ -69,7 +69,7 @@ $grey: #eaeaea;
 	}	
 	&__reservez {
 		background: lighten($grey, 5%);
-		padding: 20px 0px 60px;
+		padding: 20px 0px 10px;
 		h1 {
 			font-size: 1.5em;
 			text-align: center;
@@ -84,7 +84,7 @@ $grey: #eaeaea;
 		}
 	}
 	&__fonctionnement {
-		padding-bottom: 40px 0px;
+		padding-bottom: 40px;
 		.button {
 			display: flex;
 			justify-content: flex-start;
@@ -191,7 +191,6 @@ $grey: #eaeaea;
 		font-size: 1.1em;
 		font-weight: 400;
 		margin-bottom: 0px;
-
 	}
 	hr {
 		color: $tertiaire;
@@ -199,17 +198,13 @@ $grey: #eaeaea;
 		width: 2.3em;
 		margin-left: 0px;
 	}
-	form {
-		margin: 30px 0px 60px 0px;
-	}
 	&__photo {
 		width: 100%;
 		height: 300px;
 		margin: 0px;
 		img {
 			position: relative;
-			// background-size: cover;
-			    object-fit: cover;
+			object-fit: cover;
 			width: 100%;
 			height: 300px;
 			margin: 0px;	
@@ -244,19 +239,20 @@ $grey: #eaeaea;
 			&__description {
 				font-size: 1.1em;
 				font-weight: 700;
-				margin: 10px;
+				margin: 5px;
 				text-overflow: ellipsis;
 				white-space: nowrap;
 				overflow: hidden;
 				span {
-					font-size: 0.9em;
+					font-size: 0.8em;
 					font-weight: 300;
+					padding-top: 8px;
 				}
 			}
 			&__price {
-				font-size: 1.2em;
+				font-size: 1em;
 				font-weight: 700;
-				margin: 10px;
+				margin: 20px 10px 0px 10px;
 			}
 			&__icon {
 				overflow: hidden;
@@ -287,7 +283,7 @@ $grey: #eaeaea;
 	}
 	i {
 		color: #FFFFFF;
-		width: 10px;
+		width: 30px;
 		height: 8px;
 	}
 }
@@ -296,27 +292,32 @@ $grey: #eaeaea;
 
 /* Button */
 
-form {
-		text-align: center;
-
-	.btn {
+.action {
+	text-align: center;
+	margin: 30px 0px 60px 0px;
+	width: 100%;
+	&__btn {
 	  	border: 0;
-	  	padding: 0.75rem 1.5rem;
+	  	padding: 0.75em 1.5em;
 	  	font-weight: 500;
-	  	font-size: 1.1rem;
+	  	font-size: 1em;
 	  	border-radius: 100px;
 	  	color: white;
 	  	background: linear-gradient(to bottom, $secondaire, $primaire);
 	  	cursor: pointer;
 	  	transition-duration: 0.25s;
-	  	box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+	  	box-shadow: 0.25em 0.25em 10px rgba(0, 0, 0, 0.25);
 
 	  	&:hover {
 	    	opacity: 0.8;
 	    	box-shadow: 0px 10px 14px -7px rgba(0, 0, 0, 0.50);
 	  	}
+	  	&--commande {
+		width: 180px;
+		}
 	}
 }
+
 
 /* Loader-spinner */
 
@@ -385,14 +386,13 @@ form {
 
 /* Heart Like */
 
-.heart {
+.fa-heart {
     color: transparent;
     position: relative;
     float: right;
-    margin-top: 8px;
-    padding: 0 1.3rem;
+    margin: 30px 30px 20px 0px;
     font-size: 22px;
-    -webkit-text-stroke: 1px black;
+    // -webkit-text-stroke: 1px black;
     transition: color 0.5s ease-in;
 	&:hover {
     cursor: pointer;
@@ -400,18 +400,30 @@ form {
 	}
 }
 
-
 /* Price Animation */
 
-.icon-price {
-	&:hover {
-				    padding: 0 1.8rem;
-				    width: .51rem;
-				     transition: .5s;
-    transform: rotate(360deg);
-    cursor: pointer;
-}
-}
 
 /* Menu Animation */
 
+/* MEDIA QUERIES *********************** */
+
+@media only screen and (min-width: 768px) {
+	
+	body {
+		margin: 0px;
+		padding: 0px;
+		@include roboto;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.container {
+		width: 375px;
+	}
+
+	.bandeau {
+		background-color: $primaire;
+		width: 600px;
+	}
+}

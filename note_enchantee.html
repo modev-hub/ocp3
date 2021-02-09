@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
 	<meta charset="utf-8">
@@ -8,175 +8,184 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-	<Link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" intégrité="SHA384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonyme">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 </head>
 
-<body class="container">
+<body>
 
-	<!-- HEADER ------------------------------------------------------------------ -->
-	<header class="header">
-		<a href="index.html"><i class="fas fa-arrow-left"></i></a>
-		<figure>
-			<img src="img/logo/ohmyfood.svg" alt="Logo Ohmyfood">
-		</figure>
-	</header>
+	<div class="bandeau"></div>
 
-	<main class="menu">
-		<figure class="menu__photo">
-			<img src="img/restaurant/note_enchantee.jpg" alt="La note enchantée">
-		</figure>
+	<div class="container">	
 
-		<section class="menu__titre">
-			<h1>La note enchantée</h1>
-			<div class="heart">
-				<i class="fas fa-heart"></i>
+		<!-- HEADER -->
+		<header class="header">
+			<a href="index.html"><i class="fas fa-arrow-left"></i></a>
+			<figure>
+				<img src="img/logo/ohmyfood.svg" alt="Logo Ohmyfood">
+			</figure>
+		</header>
+
+		<!-- MENU -->
+		<main class="menu">
+			<figure class="menu__photo">
+				<img src="img/restaurant/note_enchantee.jpg" alt="La note enchantée">
+			</figure>
+
+			<section class="menu__titre">
+				<h1>La note enchantée</h1>
+				<div class="heart">
+					<i class="fas fa-heart"></i>
+				</div>
+			</section>
+
+			<section class="menu__plat">
+				<h2>Entrées</h2>
+				<hr>
+				<div class="button">
+					<p class="button__description">
+						Ravioles de foie gras<br />
+						<span>Accompagnés de leur crème à la truffe</span>
+					</p>
+					<p class="button__price">
+						25€
+					</p>
+				</div>
+
+				<div class="button">
+					<p class="button__description">
+						Caviar osciètre<br />
+						<span>Sur blini à la farine de blé noir</span>
+					</p>
+					<p class="button__price">
+						35€
+					</p>
+				</div>
+
+				<div class="button">
+					<p class="button__description">
+						Homard et espuma de potiron<br />
+						<span>Mariné aux zestes d'orange</span>
+					</p>
+					<p class="button__price">
+						20€
+					</p>
+				</div>
+
+				<div class="button">
+					<p class="button__description">
+						Foie gras de canard cuit entier<br />
+						<span>Confiture de figue et pain toasté</span>
+					</p>
+					<p class="button__price">
+						35€
+					</p>
+				</div>
+			</section>
+
+			<section class="menu__plat">
+				<h2>Plats</h2>
+				<hr>
+				<div class="button">
+					<p class="button__description">
+						Noix de coquilles Saint-Jacques<br />
+						<span>Sur lit de purée de céleri-rave</span>
+					</p>
+					<p class="button__price">
+						40€
+					</p>
+				</div>
+
+				<div class="button">
+					<p class="button__description">
+						Langoustine poêlée<br />
+						<span>Purée de patate douce</span>
+					</p>
+					<p class="button__price">
+						35€
+					</p>
+				</div>
+
+				<div class="button">
+					<p class="button__description">
+						Mijoté de queue de boeuf<br />
+						<span>Et riz sauvage aux zestes de citron</span>
+					</p>
+					<p class="button__price">
+						44€
+					</p>
+				</div>
+			</section>
+
+			<section class="menu__plat">
+				<h2>Desserts</h2>
+				<hr>
+				<div class="button">
+					<p class="button__description">
+						Macaron noisette et chocolat<br />
+						<span>Glace au caramel brun et sel de Guérande</span>
+					</p>
+					<p class="button__price">
+						18€
+					</p>
+				</div>
+
+				<div class="button">
+					<p class="button__description">
+						Baba au rhum revisité<br />
+						<span>Avec son coulis de citron</span>
+					</p>
+					<p class="button__price">
+						22€
+					</p>
+				</div>
+
+				<div class="button">
+					<p class="button__description">
+						Tarte au citron meringuée<br />
+						<span>Déstructurée</span>
+					</p>
+					<p class="button__price">
+						23€
+					</p>
+				</div>
+			</section>
+
+			<form class="action">
+				<button class="action__btn action__btn--commande" type="button">
+					Commander
+				</button>
+			</form>
+		</main>
+
+		<!-- FOOTER -->
+		<footer class="footer">
+			<h4>ohmyfood</h4>
+
+			<div class="footer__lien">
+				<i class="fas fa-utensils"></i>
+				<p>
+					Proposer un restaurant
+				</p>
 			</div>
-		</section>
 
-		<section class="menu__plat">
-			<h2>Entrées</h2>
-			<hr>
-			<div class="button">
-				<p class="button__description">
-					Ravioles de foie gras<br />
-					<span>Accompagnés de leur crème à la truffe</span>
-				</p>
-				<p class="button__price">
-					25€
+			<div class="footer__lien">
+				<i class="fas fa-hands-helping"></i>
+				<p>
+					Devenir partenaire
 				</p>
 			</div>
 
-			<div class="button">
-				<p class="button__description">
-					Caviar osciètre<br />
-					<span>Sur blini à la farine de blé noir</span>
-				</p>
-				<p class="button__price">
-					35€
-				</p>
-			</div>
-
-			<div class="button">
-				<p class="button__description">
-					Homard et espuma de potiron<br />
-					<span>Mariné aux zestes d'orange</span>
-				</p>
-				<p class="button__price">
-					20€
-				</p>
-			</div>
-
-			<div class="button">
-				<p class="button__description">
-					Foie gras de canard cuit entier<br />
-					<span>Confiture de figue et pain toasté</span>
-				</p>
-				<p class="button__price">
-					35€
-				</p>
-			</div>
-		</section>
-
-		<section class="menu__plat">
-			<h2>Plats</h2>
-			<hr>
-			<div class="button">
-				<p class="button__description">
-					Noix de coquilles Saint-Jacques<br />
-					<span>Sur lit de purée de céleri-rave</span>
-				</p>
-				<p class="button__price">
-					40€
-				</p>
-			</div>
-
-			<div class="button">
-				<p class="button__description">
-					Langoustine poêlée<br />
-					<span>Purée de patate douce</span>
-				</p>
-				<p class="button__price">
-					35€
-				</p>
-			</div>
-
-			<div class="button">
-				<p class="button__description">
-					Mijoté de queue de boeuf<br />
-					<span>Et riz sauvage aux zestes de citron</span>
-				</p>
-				<p class="button__price">
-					44€
-				</p>
-			</div>
-		</section>
-
-		<section class="menu__plat">
-			<h2>Desserts</h2>
-			<hr>
-			<div class="button">
-				<p class="button__description">
-					Macaron noisette et chocolat<br />
-					<span>Glace au caramel brun et sel de Guérande</span>
-				</p>
-				<p class="button__price">
-					18€
-				</p>
-			</div>
-
-			<div class="button">
-				<p class="button__description">
-					Baba au rhum revisité<br />
-					<span>Avec son coulis de citron</span>
-				</p>
-				<p class="button__price">
-					22€
-				</p>
-			</div>
-
-			<div class="button">
-				<p class="button__description">
-					Tarte au citron meringuée<br />
-					<span>Déstructurée</span>
-				</p>
-				<p class="button__price">
-					23€
-				</p>
-			</div>
-		</section>
-
-		<form action="">
-			<button class="btn" type="button">
-				Commander
-			</button>
-		</form>
-	</main>
-
-	<!-- FOOTER ------------------------------------------------------------------ -->
-	<footer class="footer">
-		<h4>ohmyfood</h4>
-
-		<div class="footer__lien">
-			<i class="fas fa-utensils"></i>
 			<p>
-				Proposer un restaurant
+				Mentions légales
 			</p>
-		</div>
 
-		<div class="footer__lien">
-			<i class="fas fa-hands-helping"></i>
 			<p>
-				Devenir partenaire
+				<a href="mailto:contact@ohmyfood.com" target="_blank">Contact</a>
 			</p>
-		</div>
+		</footer>
+	</div>
 
-		<p>
-			Mentions légales
-		</p>
+	<div class="bandeau"></div>
 
-		<p>
-			<a href="mailto:contact@ohmyfood.com" target="_blank">Contact</a>
-		</p>
-	</footer>
 </body>
 </html>
