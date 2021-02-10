@@ -1,0 +1,37 @@
+.heart {
+    position: relative;
+    float: right;
+    margin: 30px 30px 20px 0px;
+    font-size: 22px;
+    transition: color 0.5s ease-in;
+	&:hover {
+    cursor: pointer;
+    color: $secondaire;
+	}
+}
+
+// .menu {
+//     transform: translateY(100px);
+//     transition: 0.2s;
+//   	&:hover {
+//     transform: translateY(0);
+// 	  .button1 {
+// 	    transition-delay: 0.0s;
+// 	  }
+// 	  .button2 {
+// 	    transition-delay: 0.05s;
+// 	  }
+// 	  .button3 {
+// 	    transition-delay: 0.1s;
+// 	  }
+// 	  .button4 {
+// 	    transition-delay: 0.15s;
+// 	  }
+// 	  .button5 {
+// 	    transition-delay: 0.2s;
+// 	  }
+// 	  .button6 {
+// 	    transition-delay: 0.25s;
+// 	  }
+// 	}
+// }
