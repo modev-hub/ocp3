@@ -1,23 +1,16 @@
 @media only screen and (min-width: 768px) {
 	
 	body {
-		margin: 0px;
-		padding: 0px;
-		// @include roboto;
-		font-family: 'Roboto', sans-serif;
-		font-size: 1em;
-
 		display: flex;
-		flex-direction: row;
 		justify-content: center;
-	}
 
-	.container {
-		width: 375px;
-	}
+		.container {
+			width: 375px;
+		}
 
-	.bandeau {
-		background: linear-gradient(to top, $secondaire, $primaire);
-		width: 600px;
+		.bandeau {
+			background: linear-gradient(to top, $secondaire, $primaire);
+			width: 600px;
+		}
 	}
 }
