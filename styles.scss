@@ -1,13 +1,23 @@
+
+/* CODEBASE GLOBALE */
+
+@use "_variables.scss";
+@use "_mixins.scss";
+
+
+
+
+
 /* UTILS ****************************************************************************** */
 
-$primaire: #9356DC;
-$secondaire: #FF79DA;
-$tertiaire: #99E2D0;
-$grey: #eaeaea;
-@mixin roboto {
-	font-family: 'Roboto', sans-serif;
-	font-size: 1em;
-}
+// $primaire: #9356DC;
+// $secondaire: #FF79DA;
+// $tertiaire: #99E2D0;
+// $grey: #eaeaea;
+// @mixin roboto {
+// 	font-family: 'Roboto', sans-serif;
+// 	font-size: 1em;
+// }
 
 /* BASE ******************************************************************************** */
 

@@ -98,7 +98,7 @@ body .container {
   width: 100%;
 }
 .action__btn {
-  border: 0;
+  border: none;
   padding: 0.75em 1.5em;
   font-weight: 500;
   font-size: 1em;
@@ -106,7 +106,7 @@ body .container {
   color: #FFFFFF;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
   cursor: pointer;
-  transition-duration: 0.25s;
+  transition-duration: 450ms;
   box-shadow: 0.25em 0.25em 10px rgba(0, 0, 0, 0.25);
 }
 .action__btn:hover {
@@ -158,14 +158,23 @@ body .container {
 
 .heart {
   position: relative;
-  float: right;
   margin: 30px 30px 20px 0px;
-  font-size: 22px;
-  transition: color 0.5s ease-in;
-}
-.heart:hover {
   cursor: pointer;
-  color: #FF79DA;
+}
+.heart i {
+  font-size: 22px;
+  color: transparent;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  background-clip: text;
+  position: absolute;
+  -webkit-background-clip: text;
+}
+.heart i.fas {
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+.heart i.fas:hover {
+  opacity: 1;
 }
 
 .home {
