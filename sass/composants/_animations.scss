@@ -2,6 +2,9 @@
     position: relative;
     margin: 30px 30px 20px 0px;
     cursor: pointer;
+    &--menu {
+    	margin: 30px 50px 30px 0px;
+    }
     i {
     	font-size: 22px;
     	color: transparent;
@@ -9,8 +12,6 @@
 	    background-clip: text;
 	    position: absolute;
 	    -webkit-background-clip: text;
-    	&.far {
-		}
 		&.fas {
 			transition: opacity 1s ease-in-out;
 			opacity: 0;
@@ -25,31 +26,31 @@
 	position: relative;
 	&__button1 {
 		position: absolute;
-		animation: derouler 1s linear;
+		animation: deroule 1s linear;
 		animation-delay: 0.2s;
 		animation-fill-mode: both;
 	}
 	&__button2 {
 		position: absolute;
-		animation: derouler 1s linear;
+		animation: deroule 1s linear;
 		animation-delay: 0.35s;
 		animation-fill-mode: both;
 	}
 	&__button3 {
 		position: absolute;
-		animation: derouler 1s linear;
+		animation: deroule 1s linear;
 		animation-delay: 0.50s;
 		animation-fill-mode: both;
 	}
 	&__button4 {
 		position: absolute;
-		animation: derouler 1s linear;
+		animation: deroule 1s linear;
 		animation-delay: 0.65s;
 		animation-fill-mode: both;
 	}
 }
 
-@keyframes derouler {
+@keyframes deroule {
 	0% {
 		opacity: 0;
 		transform: translateY(30px)
@@ -58,5 +59,49 @@
 	100% {
 		opacity: 1;
 		transform: translateY(0px)
+	}
+}
+
+.button {
+	cursor: pointer;
+	overflow: hidden;
+	i {
+		color: $white;
+		background: $tertiaire;
+		padding: 20px;
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+		align-self: stretch;
+		display: flex;
+		align-items: center;
+		font-size: 1.3em;
+		transform: translateX(100%)
+	}
+	&:hover i {
+		animation: check 450ms linear;
+		animation-fill-mode: both;
+		&::before {
+			animation: rotate 450ms linear;
+		}
+	}
+}
+
+@keyframes check {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+		
+	}
+	100% {
+		transform: rotate(360deg);
 	}
 }

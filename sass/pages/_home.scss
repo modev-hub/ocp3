@@ -36,7 +36,7 @@
 	}
 	&__fonctionnement {
 		padding-bottom: 40px;
-		.button {
+		.button-fonct {
 			display: flex;
 			justify-content: flex-start;
 			align-items: center;
@@ -69,7 +69,7 @@
 			i {
 				margin: 0px 16px 0px 35px;
 				font-size: 1.2em;
-				color: darken($background, 40%);
+				color: darken($background, 30%);
 			}
 		}
 	}
