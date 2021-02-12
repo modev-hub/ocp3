@@ -205,19 +205,20 @@ body .container {
 .heart i {
   font-size: 22px;
   position: absolute;
-  color: transparent;
-  background-clip: text;
-  background: #000000;
-  -webkit-background-clip: text;
+}
+.heart i.far {
+  color: #000000;
+  opacity: 1;
 }
 .heart i.fas {
   background-clip: text;
-  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  -webkit-text-fill-color: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   -webkit-background-clip: text;
   transition: opacity 1s ease-in-out;
   opacity: 0;
 }
-.heart i.fas:hover {
+.heart:hover > .fas {
   opacity: 1;
 }
 

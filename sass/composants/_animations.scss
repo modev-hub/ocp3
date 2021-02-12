@@ -12,28 +12,21 @@
     i {
     	font-size: 22px;
     	position: absolute;
-    	color: transparent;
-	    background-clip: text;
-	    background: $black;
-	    -webkit-background-clip: text;
 	    &.far {
-	    	// z-index: 2000;
-	    	// background-clip: text;
-	    	// background: $black;
-	    	// -webkit-background-clip: text;
-	    	// color: transparent;
+	    	color: $black;
+	    	opacity: 1;
 	    }
 		&.fas {
 			background-clip: text;
-			background: linear-gradient(to bottom, $secondaire, $primaire);
+			-webkit-text-fill-color: transparent;
+			background: -webkit-gradient(linear, left top, left bottom, from($secondaire), to($primaire));
 			-webkit-background-clip: text;
 			transition: opacity 1s ease-in-out;
 			opacity: 0;
-			// z-index: 1000;
-			&:hover {
-				opacity: 1;
-			}
 		}
+	}
+	&:hover > .fas {
+				opacity: 1;
 	}
 }
 
