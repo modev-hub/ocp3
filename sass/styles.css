@@ -156,6 +156,7 @@ body .container {
   animation-delay: 0.5s;
 }
 
+/* HEART ANIMATION */
 .heart {
   position: relative;
   margin: 30px 30px 20px 0px;
@@ -167,19 +168,27 @@ body .container {
 .heart i {
   font-size: 22px;
   color: transparent;
-  background: linear-gradient(to bottom, #FF79DA, #9356DC);
   background-clip: text;
+  background: #000000;
   position: absolute;
   -webkit-background-clip: text;
 }
+.heart i.far {
+  font-size: 1.3em;
+}
 .heart i.fas {
+  background-clip: text;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
   transition: opacity 1s ease-in-out;
   opacity: 0;
+  font-size: 1.1em;
 }
 .heart i.fas:hover {
   opacity: 1;
 }
 
+/* MENU ANIMATION */
 .plat {
   position: relative;
 }
@@ -218,36 +227,76 @@ body .container {
     transform: translateY(0px);
   }
 }
+/* CHECK ANIMATION */
 .button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f7f7;
+  margin: 15px auto;
+  padding-left: 10px;
+  box-shadow: 0px 10px 14px -7px #b7b7b7;
+  border-radius: 20px;
+  position: relative;
+  text-decoration: none;
+  color: #000000;
+  height: 70px;
   cursor: pointer;
   overflow: hidden;
+}
+.button__description {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.button__description span {
+  font-size: 0.8em;
+  font-weight: 300;
+  padding-top: 8px;
+}
+.button__price {
+  font-size: 1em;
+  font-weight: 700;
+  padding: 20px;
 }
 .button i {
   color: #FFFFFF;
   background: #99E2D0;
-  padding: 20px;
+  padding: 25px 20px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  align-self: stretch;
+  align-items: stretch;
   display: flex;
-  align-items: center;
   font-size: 1.3em;
-  transform: translateX(100%);
+  transform-origin: right;
+  position: absolute;
+  right: -62px;
 }
-.button:hover i {
+.button:hover > i {
   animation: check 450ms linear;
   animation-fill-mode: both;
 }
-.button:hover i::before {
+.button:hover > i::before {
   animation: rotate 450ms linear;
+}
+.button:hover > .price {
+  animation: check 450ms linear;
+  animation-fill-mode: both;
+}
+.button:hover > .description {
+  animation: diminue 450ms linear;
+  animation-fill-mode: both;
 }
 
 @keyframes check {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(0%);
+    transform: translateX(-100%);
   }
 }
 @keyframes rotate {
@@ -256,6 +305,14 @@ body .container {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes diminue {
+  0% {
+    margin-right: 0%;
+  }
+  100% {
+    margin-right: 20%;
   }
 }
 .home {
@@ -433,38 +490,6 @@ body .container {
 }
 .menu__plat {
   padding: 16px 16px 0px 16px;
-}
-.menu__plat .button {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #f7f7f7;
-  margin: 15px auto;
-  padding-left: 10px;
-  box-shadow: 0px 10px 14px -7px #b7b7b7;
-  border-radius: 20px;
-  position: relative;
-  text-decoration: none;
-  color: #000000;
-  height: 70px;
-}
-.menu__plat .button__description {
-  font-size: 1.1em;
-  font-weight: 700;
-  margin: 5px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.menu__plat .button__description span {
-  font-size: 0.8em;
-  font-weight: 300;
-  padding-top: 8px;
-}
-.menu__plat .button__price {
-  font-size: 1em;
-  font-weight: 700;
-  margin: 20px 10px 0px 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

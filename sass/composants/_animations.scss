@@ -1,3 +1,4 @@
+/* HEART ANIMATION */
 .heart {
     position: relative;
     margin: 30px 30px 20px 0px;
@@ -8,13 +9,20 @@
     i {
     	font-size: 22px;
     	color: transparent;
-	    background: linear-gradient(to bottom, $secondaire, $primaire);
 	    background-clip: text;
+	    background: $black;
 	    position: absolute;
 	    -webkit-background-clip: text;
+	    &.far {
+	    	font-size: 1.3em;
+	    }
 		&.fas {
+			background-clip: text;
+			background: linear-gradient(to bottom, $secondaire, $primaire);
+			-webkit-background-clip: text;
 			transition: opacity 1s ease-in-out;
 			opacity: 0;
+			font-size: 1.1em;
 			&:hover {
 				opacity: 1;
 			}
@@ -22,6 +30,7 @@
 	}
 }
 
+/* MENU ANIMATION */
 .plat {
 	position: relative;
 	&__button1 {
@@ -62,36 +71,76 @@
 	}
 }
 
+/* CHECK ANIMATION */
 .button {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: lighten($background, 5%);
+	margin: 15px auto;
+	padding-left: 10px;
+	box-shadow: 0px 10px 14px -7px darken($background, 20%);
+	border-radius: 20px;
+	position: relative;
+	text-decoration: none;
+	color: $black;
+	height: 70px;
 	cursor: pointer;
 	overflow: hidden;
+	&__description {
+		font-size: 1.1em;
+		font-weight: 700;
+		margin: 5px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		span {
+			font-size: 0.8em;
+			font-weight: 300;
+			padding-top: 8px;
+		}
+	}
+	&__price {
+		font-size: 1em;
+		font-weight: 700;
+		padding: 20px;
+	}
 	i {
 		color: $white;
 		background: $tertiaire;
-		padding: 20px;
+		padding: 25px 20px;
 		border-top-right-radius: 20px;
 		border-bottom-right-radius: 20px;
-		align-self: stretch;
+		align-items: stretch;
 		display: flex;
-		align-items: center;
 		font-size: 1.3em;
-		transform: translateX(100%)
+		transform-origin: right;
+		position: absolute;
+		right: -62px;
 	}
-	&:hover i {
+	&:hover > i {
 		animation: check 450ms linear;
 		animation-fill-mode: both;
 		&::before {
 			animation: rotate 450ms linear;
 		}
 	}
+	&:hover > .price {
+		animation: check 450ms linear;
+		animation-fill-mode: both;
+	}
+	&:hover > .description {
+		animation: diminue 450ms linear;
+		animation-fill-mode: both;
+	}
 }
 
 @keyframes check {
 	0% {
-		transform: translateX(100%);
+		transform: translateX(0%);
 	}
 	100% {
-		transform: translateX(0%);
+		transform: translateX(-100%);
 	}
 }
 
@@ -103,5 +152,15 @@
 	}
 	100% {
 		transform: rotate(360deg);
+	}
+}
+
+@keyframes diminue {
+	0% {
+		margin-right: 0%;
+		
+	}
+	100% {
+		margin-right: 20%;
 	}
 }
