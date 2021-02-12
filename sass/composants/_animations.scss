@@ -1,20 +1,27 @@
 /* HEART ANIMATION */
 .heart {
+	display: flex;
+    justify-content: center;
+    align-content: center;
     position: relative;
-    margin: 30px 30px 20px 0px;
+    padding: 30px 30px 20px 0px;
     cursor: pointer;
     &--menu {
-    	margin: 30px 50px 30px 0px;
+    	padding: 30px 50px 30px 0px;
     }
     i {
     	font-size: 22px;
+    	position: absolute;
     	color: transparent;
 	    background-clip: text;
 	    background: $black;
-	    position: absolute;
 	    -webkit-background-clip: text;
 	    &.far {
-	    	font-size: 1.3em;
+	    	// z-index: 2000;
+	    	// background-clip: text;
+	    	// background: $black;
+	    	// -webkit-background-clip: text;
+	    	// color: transparent;
 	    }
 		&.fas {
 			background-clip: text;
@@ -22,7 +29,7 @@
 			-webkit-background-clip: text;
 			transition: opacity 1s ease-in-out;
 			opacity: 0;
-			font-size: 1.1em;
+			// z-index: 1000;
 			&:hover {
 				opacity: 1;
 			}
@@ -56,18 +63,6 @@
 		animation: deroule 1s linear;
 		animation-delay: 0.65s;
 		animation-fill-mode: both;
-	}
-}
-
-@keyframes deroule {
-	0% {
-		opacity: 0;
-		transform: translateY(30px)
-		
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0px)
 	}
 }
 
@@ -119,48 +114,18 @@
 		right: -62px;
 	}
 	&:hover > i {
-		animation: check 450ms linear;
+		animation: check 400ms linear;
 		animation-fill-mode: both;
 		&::before {
-			animation: rotate 450ms linear;
+			animation: rotate 400ms linear;
 		}
 	}
 	&:hover > .price {
-		animation: check 450ms linear;
+		animation: check 400ms linear;
 		animation-fill-mode: both;
 	}
 	&:hover > .description {
-		animation: diminue 450ms linear;
+		animation: diminue 400ms linear;
 		animation-fill-mode: both;
-	}
-}
-
-@keyframes check {
-	0% {
-		transform: translateX(0%);
-	}
-	100% {
-		transform: translateX(-100%);
-	}
-}
-
-
-@keyframes rotate {
-	0% {
-		transform: rotate(0deg);
-		
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
-@keyframes diminue {
-	0% {
-		margin-right: 0%;
-		
-	}
-	100% {
-		margin-right: 20%;
 	}
 }

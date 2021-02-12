@@ -29,6 +29,40 @@ body .container {
     transform: translateY(0);
   }
 }
+@keyframes deroule {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes check {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes diminue {
+  0% {
+    margin-right: 0%;
+  }
+  100% {
+    margin-right: 20%;
+  }
+}
 @media only screen and (min-width: 768px) {
   body {
     display: flex;
@@ -158,23 +192,23 @@ body .container {
 
 /* HEART ANIMATION */
 .heart {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   position: relative;
-  margin: 30px 30px 20px 0px;
+  padding: 30px 30px 20px 0px;
   cursor: pointer;
 }
 .heart--menu {
-  margin: 30px 50px 30px 0px;
+  padding: 30px 50px 30px 0px;
 }
 .heart i {
   font-size: 22px;
+  position: absolute;
   color: transparent;
   background-clip: text;
   background: #000000;
-  position: absolute;
   -webkit-background-clip: text;
-}
-.heart i.far {
-  font-size: 1.3em;
 }
 .heart i.fas {
   background-clip: text;
@@ -182,7 +216,6 @@ body .container {
   -webkit-background-clip: text;
   transition: opacity 1s ease-in-out;
   opacity: 0;
-  font-size: 1.1em;
 }
 .heart i.fas:hover {
   opacity: 1;
@@ -217,16 +250,6 @@ body .container {
   animation-fill-mode: both;
 }
 
-@keyframes deroule {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
 /* CHECK ANIMATION */
 .button {
   display: flex;
@@ -276,45 +299,21 @@ body .container {
   right: -62px;
 }
 .button:hover > i {
-  animation: check 450ms linear;
+  animation: check 400ms linear;
   animation-fill-mode: both;
 }
 .button:hover > i::before {
-  animation: rotate 450ms linear;
+  animation: rotate 400ms linear;
 }
 .button:hover > .price {
-  animation: check 450ms linear;
+  animation: check 400ms linear;
   animation-fill-mode: both;
 }
 .button:hover > .description {
-  animation: diminue 450ms linear;
+  animation: diminue 400ms linear;
   animation-fill-mode: both;
 }
 
-@keyframes check {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes diminue {
-  0% {
-    margin-right: 0%;
-  }
-  100% {
-    margin-right: 20%;
-  }
-}
 .home {
   display: flex;
   flex-direction: column;

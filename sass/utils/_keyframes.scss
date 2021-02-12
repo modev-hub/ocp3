@@ -19,3 +19,45 @@
     transform: translateY(0);
   }
 }
+
+@keyframes deroule {
+  0% {
+    opacity: 0;
+    transform: translateY(30px)
+    
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px)
+  }
+}
+
+@keyframes check {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes diminue {
+  0% {
+    margin-right: 0%;
+    
+  }
+  100% {
+    margin-right: 20%;
+  }
+}
