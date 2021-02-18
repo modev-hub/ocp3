@@ -18,7 +18,7 @@
 	    }
 		&.fas {
 			background-clip: text;
-			-webkit-text-fill-color: transparent;
+			color: transparent;
 			background: -webkit-gradient(linear, left top, left bottom, from($secondaire), to($primaire));
 			-webkit-background-clip: text;
 			transition: opacity 1s ease-in-out;
@@ -34,28 +34,21 @@
 .plat {
 	position: relative;
 	&__button1 {
-		position: absolute;
-		animation: deroule 1s linear;
+		@include deroulanim;
 		animation-delay: 0.2s;
-		animation-fill-mode: both;
+		
 	}
 	&__button2 {
-		position: absolute;
-		animation: deroule 1s linear;
+		@include deroulanim;
 		animation-delay: 0.35s;
-		animation-fill-mode: both;
 	}
 	&__button3 {
-		position: absolute;
-		animation: deroule 1s linear;
+		@include deroulanim;
 		animation-delay: 0.50s;
-		animation-fill-mode: both;
 	}
 	&__button4 {
-		position: absolute;
-		animation: deroule 1s linear;
+		@include deroulanim;
 		animation-delay: 0.65s;
-		animation-fill-mode: both;
 	}
 }
 
@@ -67,7 +60,7 @@
 	background: lighten($background, 5%);
 	margin: 15px auto;
 	padding-left: 10px;
-	box-shadow: 0px 10px 14px -7px darken($background, 20%);
+	@include shadow;
 	border-radius: 20px;
 	position: relative;
 	text-decoration: none;

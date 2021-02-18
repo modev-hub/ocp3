@@ -78,7 +78,7 @@ body .container {
 }
 .header {
   display: flex;
-  box-shadow: 0px 10px 14px -7px #d1d1d1;
+  box-shadow: 0px 10px 14px -7px #b7b7b7;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -212,7 +212,7 @@ body .container {
 }
 .heart i.fas {
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   -webkit-background-clip: text;
   transition: opacity 1s ease-in-out;
@@ -229,26 +229,26 @@ body .container {
 .plat__button1 {
   position: absolute;
   animation: deroule 1s linear;
-  animation-delay: 0.2s;
   animation-fill-mode: both;
+  animation-delay: 0.2s;
 }
 .plat__button2 {
   position: absolute;
   animation: deroule 1s linear;
-  animation-delay: 0.35s;
   animation-fill-mode: both;
+  animation-delay: 0.35s;
 }
 .plat__button3 {
   position: absolute;
   animation: deroule 1s linear;
-  animation-delay: 0.5s;
   animation-fill-mode: both;
+  animation-delay: 0.5s;
 }
 .plat__button4 {
   position: absolute;
   animation: deroule 1s linear;
-  animation-delay: 0.65s;
   animation-fill-mode: both;
+  animation-delay: 0.65s;
 }
 
 /* CHECK ANIMATION */
@@ -427,8 +427,8 @@ body .container {
 .home__restaurant .info {
   display: flex;
   background: #FFFFFF;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .home__restaurant .nouveau {
   position: absolute;
