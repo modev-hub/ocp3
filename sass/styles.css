@@ -426,8 +426,8 @@ body .container {
 .home__restaurant .info {
   display: flex;
   background: #FFFFFF;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 .home__restaurant .nouveau {
   position: absolute;

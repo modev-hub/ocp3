@@ -109,7 +109,7 @@
 		.info {
 			display: flex;
 			background: $white;
-			@include topradius;
+			@include bottomradius;
 		}
 		.nouveau {
 			position: absolute;
