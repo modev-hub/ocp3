@@ -11,34 +11,31 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="container">
 
-	<div class="bandeau"></div>
+	<!-- HEADER -->
+	<header class="header">
+		<a href="index.html"><i class="fas fa-arrow-left"></i></a>
+		<figure>
+			<img src="img/logo/ohmyfood.svg" alt="Logo Ohmyfood">
+		</figure>
+	</header>
 
-	<div class="container">	
+	<!-- MENU -->
+	<main class="menu">
+		<figure class="menu__photo">
+			<img src="img/restaurant/delice_sens.jpg" alt="Le délice des sens">
+		</figure>
 
-		<!-- HEADER -->
-		<header class="header">
-			<a href="index.html"><i class="fas fa-arrow-left"></i></a>
-			<figure>
-				<img src="img/logo/ohmyfood.svg" alt="Logo Ohmyfood">
-			</figure>
-		</header>
+		<section class="menu__titre">
+			<h1>Le délice des sens</h1>
+			<div class="heart">
+				<i class="fas fa-heart"></i>
+				<i class="far fa-heart"></i>
+			</div>
+		</section>
 
-		<!-- MENU -->
-		<main class="menu">
-			<figure class="menu__photo">
-				<img src="img/restaurant/delice_sens.jpg" alt="Le délice des sens">
-			</figure>
-
-			<section class="menu__titre">
-				<h1>Le délice des sens</h1>
-				<div class="heart">
-					<i class="fas fa-heart"></i>
-					<i class="far fa-heart"></i>
-				</div>
-			</section>
-
+		<div class="contain-menu">
 			<section class="menu__plat plat">
 				<h2>Entrées</h2>
 				<hr>
@@ -149,16 +146,18 @@
 					<i class="fas fa-check-circle"></i>
 				</div>
 			</section>
+		</div>
 
-			<form class="action">
-				<button class="action__btn action__btn--commande" type="button">
-					Commander
-				</button>
-			</form>
-		</main>
+		<form class="action">
+			<button class="action__btn action__btn--commande" type="button">
+				Commander
+			</button>
+		</form>
+	</main>
 
-		<!-- FOOTER -->
-		<footer class="footer">
+	<!-- FOOTER -->
+	<footer class="contain-footer">
+		<div class="footer">
 			<h4>ohmyfood</h4>
 
 			<div class="footer__lien">
@@ -182,9 +181,7 @@
 			<p>
 				<a href="mailto:contact@ohmyfood.com">Contact</a>
 			</p>
-		</footer>
-	</div>
-
-	<div class="bandeau"></div>
+		</div>	
+	</footer>
 </body>
 </html>

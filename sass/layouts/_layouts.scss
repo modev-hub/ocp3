@@ -23,27 +23,30 @@
 	}
 }
 
-.footer {
+.contain-footer {
 	background: darken($background, 70%);
-	padding: 0px 20px 40px;
-	&__lien {
-		display: flex;
-	}
-	h4 {
-		font-family: 'Shrikhand', sans-serif;
-		font-size: 1.1em;
-		font-weight: 500;
-		color: $white;
-		margin: 16px 0px;
-	} 
-	p, a {
-		color: $white;
-		margin: 0px 10px 10px 0px;
-		text-decoration: none;
-	}
-	i {
-		color: $white;
-		width: 30px;
-		height: 8px;
+	.footer {
+		background: darken($background, 70%);
+		padding: 0px 20px 40px;
+		&__lien {
+			display: flex;
+		}
+		h4 {
+			font-family: 'Shrikhand', sans-serif;
+			font-size: 1.1em;
+			font-weight: 500;
+			color: $white;
+			margin: 16px 0px;
+		} 
+		p, a {
+			color: $white;
+			margin: 0px 10px 10px 0px;
+			text-decoration: none;
+		}
+		i {
+			color: $white;
+			width: 30px;
+			height: 8px;
+		}
 	}
 }
